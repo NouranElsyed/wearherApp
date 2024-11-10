@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Weather App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ===== Favicon ===== -->
+    <link rel="icon" href="images/favicon.png" />
+    <!-- ===== Fonts Used ===== -->
+    <link rel="stylesheet" href="css/fonts.css" />
+    <!-- ===== Font Awesome Library Icons ===== -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- ===== Bootstrap Grid System ===== -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- ===== Main CSS Style Sheet ===== -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <main class="interface" id="interface">
+      <div class="container">
+        <header>
+          <div class="locationBox">
+            <i class="fa-solid fa-location-dot"></i>
+            <p class="location">Cairo</p>
+          </div>
+          
+
+          <div id="form" class="search-bar mb-3">
+            
+            <input type="text" id="zip" class="form-control" placeholder="Enter zip code or city here">            
+            <textarea id="feelings" class=" " placeholder="How are you feeling today?"></textarea>
+            <button id="generate" class="btn btn-outline-light">Generate</button>
+
+
+          </div>
+        </header>
+
+        <section class="forecast row">
+          <div id="weather-container">
+            <h2>Weather Today</h2>
+            <img src="https://openweathermap.org/img/wn/04n.png" class="weather-icon" alt="Weather Icon">
+            <div id="entryHolder" class=" p-3 ">
+              <div class="dateLabel"><div id="date" class="font-weight-bold">Date: </div></div>
+              <div class="dateLabel"><div id="temp" class="font-weight-bold">Temperature: </div></div>
+              <div class="dateLabel"><div id="content" class="font-weight-bold">Feeling: </div></div>
+          </div>
+           
+        </div>
+        </section>
+
+ 
+      </div>
+    </main>
+    <!-- ===== Main JS File ===== -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.7.27/sweetalert2.all.min.js"
+      integrity="sha512-UfSxwRR8LlT3e4VLW1fx76+guLBWBALrK5mo7aJ92ZGiqGiR2Cu2AWgQ1FMLthwh2MbBVR0PqUCNiG6/QzsQNA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

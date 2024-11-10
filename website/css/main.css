@@ -1,0 +1,127 @@
+/* ========> Variables */
+
+:root {
+  --light-black: #3b3a3a;
+  --dark-black: #101014;
+  --light-white: #f1f1f1;
+}
+
+/* ========> Global Rules */
+
+
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--dark-black);
+  color: var(--light-white);
+}
+
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+
+/* ========> Interface Rules */
+
+.interface {
+  width: 100%;
+  min-height: 100vh;
+  padding-block: 20px;
+}
+
+.interface .container {
+  height: 100%;
+  padding-inline: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.container header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+header .locationBox {
+  display: flex;
+  gap: 12px;
+}
+
+
+header .search-bar {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+header .search-bar input , textarea{
+  width: 40%;
+  height: 39px;
+  border: none;
+  padding: 0px 50px;
+  border-radius: 20px;
+  background-color: var(--light-black);
+  color: #fff;
+  font-size: 18px;
+  resize: none;
+  overflow: hidden;
+}
+textarea
+{
+
+  align-self: center;
+}
+
+header .search-bar input:focus-visible {
+  outline: none;
+}
+
+header .search-bar input::placeholder {
+  font-size: 17px;
+}
+
+
+.forecast
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+#weather-container {
+  background: rgba(107, 240, 250, 0.61);
+  max-width: 400px;
+  min-height: 400px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+
+
+.weather-info {
+  font-size: 20px;
+}
+
+.weather-icon {
+  width: 150px;
+ 
+  margin: 0 auto 10px; 
+  margin-bottom: 0;
+}
+
